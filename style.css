@@ -1,0 +1,40 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lemon', serif;
+}
+
+html {
+    scroll-behavior : smooth;
+}
+
+p {
+    color: rgb(85,85,85)
+}
+
+/* Transmission */
+a, 
+.btn{
+    transition: all 300ms ease
+}
+
+/* Desktop Nav */
+
+nav, 
+.nav-links{
+    /* make my bullet point horizontal */
+    display:flex; 
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
