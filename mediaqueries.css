@@ -1,0 +1,11 @@
+@media screen and (max-width:1200px){
+/* when the  desktop is below 1200 the desktop nav will disappear*/
+    #desktop-nav{
+        display:none
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+}
+
+/* this code can ensure the website will show nicely on either phone or laptop */

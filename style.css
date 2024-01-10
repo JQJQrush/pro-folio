@@ -19,6 +19,8 @@ p {
     color: rgb(85,85,85)
 }
 
+
+
 /* Transmission */
 a, 
 .btn{
@@ -26,7 +28,6 @@ a,
 }
 
 /* Desktop Nav */
-
 nav, 
 .nav-links{
     /* make my bullet point horizontal */
@@ -36,5 +37,97 @@ nav,
 nav {
     justify-content: space-around;
     align-items: center;
+     /* view height */
     height: 17vh;
+}
+
+.nav-links {
+    /* REM is the unit of distance in web */
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color: grey;
+    text-decoration: underline;
+    /* move the underline lower  */
+    /* use - can make it higher */
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+/* hamburger menu */
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position:relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+/* head to mediaqueries to create the hamburger menu */
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child{
+    /* tranform the line move x,y */
+    transform: rotate(45deg) translate10px,5px();
 }
